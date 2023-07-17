@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100">
+  <defs>
+    <g id="pod">
+      <polygon stroke="#000000" fill="white" stroke-width="0.5" points="5,-9 -5,-9 -10,0 -5,9 5,9 10,0" />
+    </g>
+  </defs>
+
+  <g class="pod-wrap">
+    <use xlink:href="#pod" transform="translate(50, 41)" />
+    <use xlink:href="#pod" transform="translate(35, 50)" />
+    <use xlink:href="#pod" transform="translate(65, 50)" />
+    <use xlink:href="#pod" transform="translate(50, 59)" />
+  </g>
+</svg>
+
+<a href="http://www.mathopenref.com/coordpolycalc.html" target="_blank">point calculator</a>
