@@ -86,3 +86,25 @@ a1: 1, 3,
 
 
 */
+
+function printHoneycomb(sideLen: number) {
+  const hexagon = "🔳";
+  const space = " ";
+  const lineBreak = "\n";
+
+  let honeycomb = "";
+  for (let i = 0; i < sideLen; i++) {
+    honeycomb += space.repeat(sideLen - i);
+    honeycomb += hexagon.repeat(sideLen + i);
+    honeycomb += lineBreak;
+  }
+  for (let i = sideLen - 2; i >= 0; i--) {
+    honeycomb += space.repeat(sideLen - i);
+    honeycomb += hexagon.repeat(sideLen + i);
+    honeycomb += lineBreak;
+  }
+
+  console.log(honeycomb);
+}
+
+printHoneycomb(5);
